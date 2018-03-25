@@ -19,6 +19,7 @@
 		F5E834E120677A4E001F1E0F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E020677A4E001F1E0F /* LoginVC.swift */; };
 		F5E834E320677A62001F1E0F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E220677A62001F1E0F /* CreateAccountVC.swift */; };
 		F5E834E720677BCC001F1E0F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E620677BCC001F1E0F /* GradientView.swift */; };
+		F5E834EA20679814001F1E0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E920679814001F1E0F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F5E834E020677A4E001F1E0F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F5E834E220677A62001F1E0F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F5E834E620677BCC001F1E0F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F5E834E920679814001F1E0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		F5E834C020676636001F1E0F /* ChatPro */ = {
 			isa = PBXGroup;
 			children = (
+				F5E834E8206797EA001F1E0F /* Utilities */,
 				F5E834DB20677947001F1E0F /* Model */,
 				F5E834DA2067793F001F1E0F /* View */,
 				F5E834D92067792A001F1E0F /* Controller */,
@@ -140,6 +143,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F5E834E8206797EA001F1E0F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F5E834E920679814001F1E0F /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				F5E834D820676A8B001F1E0F /* SWRevealViewController.m in Sources */,
 				F5E834E720677BCC001F1E0F /* GradientView.swift in Sources */,
 				F5E834DF206779C7001F1E0F /* ChatVC.swift in Sources */,
+				F5E834EA20679814001F1E0F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

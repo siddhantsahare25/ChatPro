@@ -174,6 +174,7 @@
                                             <constraint firstAttribute="width" constant="24" id="avO-rb-fnb"/>
                                             <constraint firstAttribute="height" constant="18" id="qxj-mx-sgn"/>
                                         </constraints>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="smackBurger"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChatPro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-dd-x6r">
@@ -202,6 +203,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cHb-qE-pny"/>
                     </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="Abm-jv-7Lq" id="rd7-pk-F73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7c-mB-H18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,6 +248,10 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="giu-ug-TtB" eventType="touchUpInside" id="PbT-Zm-rGY"/>
+                                            <action selector="prepareForUnwindWithSegue:" destination="giu-ug-TtB" eventType="touchUpInside" id="drO-rT-6MA"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uWl-qI-g4E">
                                         <rect key="frame" x="8" y="572.5" width="75" height="75"/>
@@ -315,7 +323,8 @@
                         <viewLayoutGuide key="safeArea" id="21O-SC-08W"/>
                     </view>
                     <connections>
-                        <segue destination="mBm-wK-pDG" kind="show" id="pgw-Gz-CKT"/>
+                        <outlet property="loginBtn" destination="hhh-WZ-pZn" id="gj7-Ch-70x"/>
+                        <segue destination="mBm-wK-pDG" kind="show" identifier="toLogin" id="pgw-Gz-CKT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rc8-r8-vev" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -436,7 +445,7 @@
                         <viewLayoutGuide key="safeArea" id="t1G-95-zn7"/>
                     </view>
                     <connections>
-                        <segue destination="Sj9-qK-pjT" kind="show" id="wAU-gU-Nba"/>
+                        <segue destination="Sj9-qK-pjT" kind="show" identifier="toCreateAccount" id="wAU-gU-Nba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgn-Ii-dz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
