@@ -13,6 +13,7 @@
 		F5E834C720676636001F1E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E834C520676636001F1E0F /* Main.storyboard */; };
 		F5E834C920676636001F1E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E834C820676636001F1E0F /* Assets.xcassets */; };
 		F5E834CC20676636001F1E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E834CA20676636001F1E0F /* LaunchScreen.storyboard */; };
+		F5E834D820676A8B001F1E0F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E834D720676A8B001F1E0F /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		F5E834C820676636001F1E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E834CB20676636001F1E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5E834CD20676636001F1E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E834D520676A8A001F1E0F /* ChatPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatPro-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5E834D620676A8B001F1E0F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F5E834D720676A8B001F1E0F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		F5E834C020676636001F1E0F /* ChatPro */ = {
 			isa = PBXGroup;
 			children = (
+				F5E834D420676A51001F1E0F /* Supporting Files */,
 				F5E834C120676636001F1E0F /* AppDelegate.swift */,
 				F5E834C320676636001F1E0F /* ViewController.swift */,
 				F5E834C520676636001F1E0F /* Main.storyboard */,
@@ -86,6 +91,16 @@
 				F5E834CD20676636001F1E0F /* Info.plist */,
 			);
 			path = ChatPro;
+			sourceTree = "<group>";
+		};
+		F5E834D420676A51001F1E0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5E834D620676A8B001F1E0F /* SWRevealViewController.h */,
+				F5E834D720676A8B001F1E0F /* SWRevealViewController.m */,
+				F5E834D520676A8A001F1E0F /* ChatPro-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +138,7 @@
 				TargetAttributes = {
 					F5E834BD20676636001F1E0F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -225,6 +241,7 @@
 			files = (
 				F5E834C420676636001F1E0F /* ViewController.swift in Sources */,
 				F5E834C220676636001F1E0F /* AppDelegate.swift in Sources */,
+				F5E834D820676A8B001F1E0F /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,12 +379,15 @@
 			baseConfigurationReference = 733D1813465272CF913A7E27 /* Pods-ChatPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EZLQJ9M65;
 				INFOPLIST_FILE = ChatPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Siddhant-Sahare.ChatPro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatPro/Supporting Files/ChatPro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,12 +398,14 @@
 			baseConfigurationReference = 9D38F4D1EAAE1F71D36D6715 /* Pods-ChatPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EZLQJ9M65;
 				INFOPLIST_FILE = ChatPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Siddhant-Sahare.ChatPro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatPro/Supporting Files/ChatPro-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
