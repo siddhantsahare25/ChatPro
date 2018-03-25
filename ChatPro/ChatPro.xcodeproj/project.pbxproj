@@ -14,6 +14,11 @@
 		F5E834C920676636001F1E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E834C820676636001F1E0F /* Assets.xcassets */; };
 		F5E834CC20676636001F1E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E834CA20676636001F1E0F /* LaunchScreen.storyboard */; };
 		F5E834D820676A8B001F1E0F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E834D720676A8B001F1E0F /* SWRevealViewController.m */; };
+		F5E834DD206779B8001F1E0F /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834DC206779B8001F1E0F /* ChannelVC.swift */; };
+		F5E834DF206779C7001F1E0F /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834DE206779C7001F1E0F /* ChatVC.swift */; };
+		F5E834E120677A4E001F1E0F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E020677A4E001F1E0F /* LoginVC.swift */; };
+		F5E834E320677A62001F1E0F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E220677A62001F1E0F /* CreateAccountVC.swift */; };
+		F5E834E720677BCC001F1E0F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E834E620677BCC001F1E0F /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		F5E834D520676A8A001F1E0F /* ChatPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatPro-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5E834D620676A8B001F1E0F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F5E834D720676A8B001F1E0F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F5E834DC206779B8001F1E0F /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		F5E834DE206779C7001F1E0F /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		F5E834E020677A4E001F1E0F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F5E834E220677A62001F1E0F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		F5E834E620677BCC001F1E0F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,9 @@
 		F5E834C020676636001F1E0F /* ChatPro */ = {
 			isa = PBXGroup;
 			children = (
+				F5E834DB20677947001F1E0F /* Model */,
+				F5E834DA2067793F001F1E0F /* View */,
+				F5E834D92067792A001F1E0F /* Controller */,
 				F5E834D420676A51001F1E0F /* Supporting Files */,
 				F5E834C120676636001F1E0F /* AppDelegate.swift */,
 				F5E834C320676636001F1E0F /* ViewController.swift */,
@@ -101,6 +114,32 @@
 				F5E834D520676A8A001F1E0F /* ChatPro-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5E834D92067792A001F1E0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5E834DC206779B8001F1E0F /* ChannelVC.swift */,
+				F5E834DE206779C7001F1E0F /* ChatVC.swift */,
+				F5E834E020677A4E001F1E0F /* LoginVC.swift */,
+				F5E834E220677A62001F1E0F /* CreateAccountVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5E834DA2067793F001F1E0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5E834E620677BCC001F1E0F /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5E834DB20677947001F1E0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E834DD206779B8001F1E0F /* ChannelVC.swift in Sources */,
 				F5E834C420676636001F1E0F /* ViewController.swift in Sources */,
+				F5E834E120677A4E001F1E0F /* LoginVC.swift in Sources */,
 				F5E834C220676636001F1E0F /* AppDelegate.swift in Sources */,
+				F5E834E320677A62001F1E0F /* CreateAccountVC.swift in Sources */,
 				F5E834D820676A8B001F1E0F /* SWRevealViewController.m in Sources */,
+				F5E834E720677BCC001F1E0F /* GradientView.swift in Sources */,
+				F5E834DF206779C7001F1E0F /* ChatVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
